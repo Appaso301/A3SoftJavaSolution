@@ -1,0 +1,45 @@
+footer {
+    background-color: rgba(51, 51, 51, 0.9); /* Adjust the alpha value (last parameter) for transparency */
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+    height: 137px;
+}
+
+.footer-container {
+
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    text-align: center;
+}
+
+.footer-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+}

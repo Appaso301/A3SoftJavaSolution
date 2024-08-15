@@ -1,0 +1,40 @@
+/* Style for the logo */
+.logo {
+  height: 64px;
+  width: 18%;
+  margin-right: 16px; /* Space between the logo and the menu */
+  }
+  
+  /* Spacer to push the menu items to the right */
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Menu item styling */
+  [mat-button] {
+    font-size: 16px;
+    margin-right: 16px;
+    text-decoration: none;
+  }
+
+  [mat-raised-button] {
+    background-color: #ea8a16 !important;
+  }
+
+  [matBadgeColor] {
+    color: #ea8a16 !important;
+  }
+  
+  [mat-button]:last-child {
+    margin-right: 0;
+  }
+  .header {
+    background-color: #f4f4f4d1;
+  }
+  .mat-mdc-button.active-link {
+    color: white;
+    background-color: #ea8a16 !important;
+  }
+
+
+  

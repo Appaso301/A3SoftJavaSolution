@@ -1,0 +1,132 @@
+.background {
+    background-color: #fad7f84f;
+}
+
+.head {
+    margin-left: 40%;
+}
+
+@keyframes blink {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: #ea8a16
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+.margin-top-20 {
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+.margin-top-20-connect {
+    color: #ea8a16;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+.font-style-italic {
+    font-style: italic;
+    margin-left: 40px;
+}
+
+.example-card {
+    max-width: 400px;
+}
+
+.example-header-image {
+    background-image: url('./../../../assets/img/A3.jpeg');
+    background-size: cover;
+}
+
+[mat-card-image] {
+    height: 122px;
+    width: 373px;
+}
+
+.example-card {
+    margin-left: 40px;
+}
+.cards-container{
+    display: flex
+}
+.java-title{
+    margin-right: 52px;
+}
+.spring-title{
+    margin-right: 176px;
+}
+.angular-title {
+    margin-right: 75px;
+}
+
+.button-width {
+    width: 380px;
+}
+
+.margin-top-20-card-content {
+    margin-top: 20px;
+}
+/* Default state */
+.mat-mdc-card {
+    box-shadow: var(--mdc-elevated-card-container-elevation);
+}
+
+/* Hover state with custom shadow */
+::ng-deep.mat-mdc-card:hover {
+    box-shadow: 12px 12px 12px 5px rgba(0, 0, 0, 1.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+
+[mat-raised-button] {
+    background-color: #ea8a16 !important;
+  }
+
+.margin-top-40 {
+    margin-top: 40px;
+    font-weight: bold;
+    margin-left: 40%;
+}
+.custom-divider {
+    width: 30%; /* Adjust the width to your preference */
+    margin: 20px 0; /* Optional: Adjust the margins if needed */
+    background-color: #000;
+    margin-left: 258px;
+}
+.brand_border{
+    display: flex;
+}
+.margin-top-14{
+    margin-top: 14px;
+}
+.divider-margin{
+    margin-left: 50%;
+    width: 30%; 
+    margin: 20px 0; /* Optional: Adjust the margins if needed */
+    background-color: #000;
+}
+
+.features {
+    height: 164px;
+    font-weight: bold;
+}
+.margin-top-20-p{
+    margin-top: 15px;
+}
+.mat-icon{
+    margin-top: 10px;
+}
+.second-row{
+    margin-top: 20px;
+}

@@ -1,0 +1,140 @@
+.background {
+    background-color: #fad7f84f;
+}
+
+.head {
+    margin-left: 40%;
+}
+
+
+@keyframes blink {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: #ea8a16
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+.margin-top-20 {
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.font-style-italic {
+    font-style: italic;
+    margin-left: 100px;
+}
+
+.brand_border {
+    display: flex;
+}
+
+.custom-divider {
+    width: 30%;
+    /* Adjust the width to your preference */
+    margin: 20px 0;
+    /* Optional: Adjust the margins if needed */
+    background-color: #000;
+    margin-left: 258px;
+}
+
+.margin-top-14 {
+    margin-top: 14px;
+}
+
+.divider-margin {
+    margin-left: 50%;
+    width: 30%;
+    margin: 20px 0;
+    /* Optional: Adjust the margins if needed */
+    background-color: #000;
+}
+
+.font-style-1 {
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.circle-custom {
+    margin-left: 6%;
+    margin-right: 17px;
+    font-size: 10px;
+    margin-top: 6px;
+}
+
+.button-width {
+    width: 380px;
+}
+
+::ng-deep.mat-mdc-card:hover {
+    box-shadow: 12px 12px 12px 3px rgba(0, 0, 0, 1.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+}
+.example-card {
+    width: 88%;
+    margin-left: 7%;
+    margin-bottom: 2%;
+}
+
+.margin-top-50{
+    font-weight: bold;
+    margin-left: 34%;
+    margin-top: 30px;
+}
+.custom-divider-syllabus {
+    width: 48%;
+    margin: 20px 0;
+    background-color: #000;
+    margin-left: 5px;
+}
+.divider-margin-syllabus{
+    margin-left: 50%;
+    width: 50%;
+    margin: 20px 0;
+    /* Optional: Adjust the margins if needed */
+    background-color: #000;
+}
+
+.font-style-italic-syllabus {
+    font-style: italic;
+    margin-left: 100px;
+    font-size: 19px;
+}
+
+.mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+.syllabus-title {
+    font-weight: bold;
+    margin-top: 18px;
+}
+ .circle-custom-syllabus {
+    margin-left: 3%;
+    margin-right: 8px;
+    font-size: 9px;
+    margin-top: 6px;
+ }
+ .mat-expansion-panel-spacing {
+    margin: 0px 0 !important;
+ }
+ .mat-expansion-panel {
+    border-radius: 0px !important;
+ }
+ .example-card-syllabus{
+    width: 88%;
+    margin-left: 7%;
+    margin-bottom: 1%;
+ }
