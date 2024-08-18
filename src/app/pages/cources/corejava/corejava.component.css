@@ -124,7 +124,7 @@
  .circle-custom-syllabus {
     margin-left: 3%;
     margin-right: 8px;
-    font-size: 9px;
+    font-size: 16px;
     margin-top: 6px;
  }
  .mat-expansion-panel-spacing {
@@ -136,5 +136,7 @@
  .example-card-syllabus{
     width: 88%;
     margin-left: 7%;
-    margin-bottom: 1%;
+ }
+ .mat-accordion .mat-expansion-panel:first-of-type {
+    display: none !important;
  }

@@ -1,0 +1,86 @@
+<div class="container background">
+    <div>
+        <h1 class="margin-top-20">It's About <span class="blink" style="font-style: italic;"> ADVANCE JAVA
+            </span>Syllabus</h1>
+    </div>
+    <div>
+        <h3 class="font-style-italic">Advanced Java is an essential area of study for developers who want to deepen
+            their
+            understanding of Java and build robust, scalable, and high-performance applications.</h3>
+    </div>
+    <div>
+        <h3 style="margin-left: 37%;font-weight: bold;">Here are some most imporatnt Advance Java topices</h3>
+    </div>
+    <div style="width: 1220px; height: 380px; margin-left: 100px;">
+        <ng-image-slider #nav [images]="imageObject" [infinite]="true" [autoSlide]="1"
+            [imageSize]="{ width: '50%', height: '50%' }" slideImage="1"></ng-image-slider>
+    </div>
+    <div>
+        <h3 class="font-style-italic">In Java training, you will gain proficiency in Java programming by mastering a
+            range of concepts and tools through the following</h3>
+    </div>
+    <div [@openClose]="isOpen ? true : false" class="open-close-container">
+        <p>Develop various business solutions utilizing Java's object-oriented principles, ensuring efficient and
+            scalable code.</p>
+    </div>
+    <button class="button-as-label" style="margin-left: 100px;margin-bottom: 12px;border-radius: 13px;"
+        (click)="toggleibl()" mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Implement Business
+            Logic</i></button>
+
+    <div [@openClose]="isOpenpea ? true : false" class="open-close-container">
+        <p>Learn to build applications capable of executing tasks concurrently, improving performance and
+            responsiveness.</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="togglepea()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Parallel Execution in Applications</i></button>
+
+    <div [@openClose]="isOpenif ? true : false" class="open-close-container">
+        <p>Utilize essential technologies such as Hibernate and Spring to enhance application functionality wherever
+            necessary.</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggleif()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Integrate Frameworks</i></button>
+
+    <div [@openClose]="isOpenwad ? true : false" class="open-close-container">
+        <p>Design and develop web applications using Struts, manage sessions, implement filters, and create dynamic web
+            pages with JavaServer Pages (JSP).</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="togglewad()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Web Application Development</i></button>
+
+    <div [@openClose]="isOpenajf ? true : false" class="open-close-container">
+        <p>Explore advanced Java features like reflection, exception handling, inheritance, polymorphism, method
+            overloading and overriding, design patterns, and abstract classes.</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggleajf()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Advanced Java Features</i></button>
+
+    <div [@openClose]="isOpendf ? true : false" class="open-close-container">
+        <p>Gain an understanding of DevOps principles, focusing on continuous integration and continuous deployment
+            (CI/CD).</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledf()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;DevOps Fundamentals</i></button>
+
+    <div [@openClose]="isOpendp ? true : false" class="open-close-container">
+        <p>Use tools like Jenkins and Maven to automate the build and deployment processes.</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledp()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Deployment Processes</i></button>
+
+    <div [@openClose]="isOpendpi ? true : false" class="open-close-container">
+        <p>Apply various design patterns to optimize and streamline your code during the development process.</p>
+    </div>
+    <button class="button-as-label"
+        style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledpi()"
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Design Patterns Implementation</i></button>
+    <div>
+        <app-footer></app-footer>
+    </div>
+</div>

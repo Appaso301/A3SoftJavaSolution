@@ -1,0 +1,76 @@
+.background {
+    background-color: #fad7f84f;
+}
+
+.head {
+    margin-left: 40%;
+}
+
+
+@keyframes blink {
+    0% {
+        color: red;
+    }
+
+    50% {
+        color: #ea8a16
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+.margin-top-20 {
+    font-weight: bold;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+.font-style-italic {
+    font-style: italic;
+    margin-left: 100px;
+}
+
+
+  .open-close-container {
+  
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    /* background-color: #dddddd; */
+    overflow: hidden;
+    width: 90%;
+    margin-left: 100px;
+   
+  }
+  p {
+    margin: 0;
+    padding: 20px;
+    color: blueviolet;
+    font-style: italic;
+  }
+
+
+    .button-as-label {
+        background-color: transparent;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 0;
+        text-align: left;
+    }
+
+    .button-as-label:focus {
+        outline: none; /* Remove the focus outline */
+    }
+    .mat-mdc-raised-button {
+        box-shadow: none;
+    }
+  
+  
