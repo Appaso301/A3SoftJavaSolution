@@ -40,18 +40,23 @@
   .open-close-container {
   
     color: #000000;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
     /* background-color: #dddddd; */
     overflow: hidden;
     width: 90%;
     margin-left: 100px;
    
   }
-  p {
-    margin: 0;
+  .pp {
+    margin-top: -6px;
+    padding: 11px 11px 0px 11px;
+    color: #ea8a16;
+    font-style: italic;
+  }
+  .ppp {
+    margin-top: -20px;
     padding: 20px;
-    color: blueviolet;
+    color: #ea8a16;
     font-style: italic;
   }
 
@@ -60,10 +65,10 @@
         background-color: transparent;
         border: none;
         color: #000;
-        font-size: 16px;
         cursor: pointer;
         padding: 0;
         text-align: left;
+      
     }
 
     .button-as-label:focus {
@@ -72,5 +77,95 @@
     .mat-mdc-raised-button {
         box-shadow: none;
     }
-  
-  
+    .brand_border {
+        display: flex;
+    }
+    
+    .custom-divider {
+        width: 30%;
+        /* Adjust the width to your preference */
+        margin: 20px 0;
+        /* Optional: Adjust the margins if needed */
+        background-color: #000;
+        margin-left: 258px;
+    }
+    .custom-divider-syllabus {
+        width: 48%;
+        margin: 20px 0;
+        background-color: #000;
+        margin-left: 5px;
+    }
+    .divider-margin-syllabus{
+        margin-left: 50%;
+        width: 50%;
+        margin: 20px 0;
+        /* Optional: Adjust the margins if needed */
+        background-color: #000;
+    }
+
+    .margin-top-14 {
+        margin-top: 14px;
+    }
+
+    .mat-expansion-panel-spacing {
+        margin: 0px 0 !important;
+     }
+     .mat-expansion-panel {
+        border-radius: 0px !important;
+     }
+     .example-card-syllabus{
+        width: 88%;
+        margin-left: 7%;
+     }
+     .mat-accordion .mat-expansion-panel:first-of-type {
+        display: none !important;
+     }
+
+     .margin-top-50{
+        font-weight: bold;
+        margin-left: 34%;
+        margin-top: 30px;
+    }
+    .circle-custom-syllabus {
+        margin-left: 3%;
+        margin-right: 8px;
+        font-size: 16px;
+        margin-top: 6px;
+     }
+
+     .font-style-italic-syllabus {
+        font-style: italic;
+        margin-left: 100px;
+        font-size: 19px;
+        margin-bottom: 45px;
+    }
+
+    .fa-regular .far {
+    font-weight: none;
+    }
+
+    .p-header-styles {
+        margin-left: 40px;
+        font-weight: bold;
+       
+    }
+    .lblClass {
+        cursor: pointer !important;
+    }
+    .lblClass:hover {
+        color: #ea8a16;
+    }
+
+    .margin-bottom-15 {
+        margin-bottom: 15px;
+    }
+  .lblClassExpand {
+    cursor: pointer;
+    color: blue;
+  }
+
+  .circle-custom {
+       margin-right: 9px;
+       font-size: 10px;
+    }
+   

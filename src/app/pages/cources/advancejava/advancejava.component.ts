@@ -13,6 +13,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ]
 })
 export class AdvancejavaComponent {
+  panelOpenState = false;
   isOpen = false;
   isOpenpea = false;
   isOpenif = false;
@@ -21,29 +22,59 @@ export class AdvancejavaComponent {
   isOpendf = false;
   isOpendp = false;
   isOpendpi = false;
-  toggleibl() {
-    this.isOpen = !this.isOpen;
-  }
-  togglepea() {
-    this.isOpenpea = !this.isOpenpea;
-  }
-  toggleif() {
-    this.isOpenif = !this.isOpenif;
-  }
-  togglewad() {
-    this.isOpenwad = !this.isOpenwad;
-  }
-  toggleajf() {
-    this.isOpenajf = !this.isOpenajf;
-  }
-  toggledf() {
-    this.isOpendf = !this.isOpendf;
-  }
-  toggledp() {
-    this.isOpendp = !this.isOpendp;
-  }
-  toggledpi() {
-    this.isOpendpi = !this.isOpendpi;
+  isOpenIntroductiontoJDBC = false;
+  isOpenJDBCArchitecture = false;
+  isOpenTypesofJDBCDrivers  = false;
+  isOpenStepstoConnecttoaDatabaseUsingJDBC = false;
+  isOpenJDBCStatements = false;
+  isOpenTransactionsinJDBC = false;
+  isOpenBatchProcessinginJDBC = false;
+  isOpenJDBCErrorHandling = false;
+  isOpenJDBCDataTypes = false;
+  isOpenConnectionPooling = false;
+  isOpenJDBCwithORMObjectRelationalMapping = false;
+  isOpenJDBCBestPractices = false;
+  isOpenAdvancedJDBCFeatures = false;
+  isOpenJDBCandPerformanceConsiderations = false;
+  isOpenHandlingHTTPRequestsandResponses = false;
+  toggleibl() {this.isOpen = !this.isOpen;}
+  togglepea() {this.isOpenpea = !this.isOpenpea;}
+  toggleif() {this.isOpenif = !this.isOpenif;}
+  togglewad() {this.isOpenwad = !this.isOpenwad;}
+  toggleajf() {this.isOpenajf = !this.isOpenajf;}
+  toggledf() {this.isOpendf = !this.isOpendf;}
+  toggledp() {this.isOpendp = !this.isOpendp;}
+  toggledpi() {this.isOpendpi = !this.isOpendpi;}
+  IntroductiontoJDBC() {this.isOpenIntroductiontoJDBC = !this.isOpenIntroductiontoJDBC}
+  JDBCArchitecture() {this.isOpenJDBCArchitecture = !this.isOpenJDBCArchitecture}
+  TypesofJDBCDrivers() {this.isOpenTypesofJDBCDrivers = !this.isOpenTypesofJDBCDrivers}
+  StepstoConnecttoaDatabaseUsingJDBC() {this.isOpenStepstoConnecttoaDatabaseUsingJDBC = !this.isOpenStepstoConnecttoaDatabaseUsingJDBC}
+  JDBCStatements(){this.isOpenJDBCStatements = !this.isOpenJDBCStatements}
+  TransactionsinJDBC(){this.isOpenTransactionsinJDBC = !this.isOpenTransactionsinJDBC}
+  BatchProcessinginJDBC(){this.isOpenBatchProcessinginJDBC = !this.isOpenBatchProcessinginJDBC}
+  JDBCErrorHandling(){this.isOpenJDBCErrorHandling = !this.isOpenJDBCErrorHandling}
+  JDBCDataTypes(){this.isOpenJDBCDataTypes = !this.isOpenJDBCDataTypes}
+  ConnectionPooling(){this.isOpenConnectionPooling = !this.isOpenConnectionPooling}
+  JDBCwithORMObjectRelationalMapping(){this.isOpenJDBCwithORMObjectRelationalMapping = !this.isOpenJDBCwithORMObjectRelationalMapping}
+  JDBCBestPractices(){this.isOpenJDBCBestPractices = !this.isOpenJDBCBestPractices}
+  AdvancedJDBCFeatures(){this.isOpenAdvancedJDBCFeatures = !this.isOpenAdvancedJDBCFeatures}
+  JDBCandPerformanceConsiderations(){this.isOpenJDBCandPerformanceConsiderations = !this.isOpenJDBCandPerformanceConsiderations}
+  HandlingHTTPRequestsandResponses() {this.isOpenHandlingHTTPRequestsandResponses = !this.isOpenHandlingHTTPRequestsandResponses}
+  expandAll() {
+   this.IntroductiontoJDBC();
+   this.JDBCArchitecture();
+   this.TypesofJDBCDrivers();
+   this.StepstoConnecttoaDatabaseUsingJDBC();
+   this.JDBCStatements();
+   this.TransactionsinJDBC();
+   this.BatchProcessinginJDBC();
+   this.JDBCErrorHandling();
+   this.JDBCDataTypes();
+   this.ConnectionPooling();
+   this.JDBCwithORMObjectRelationalMapping();
+   this.JDBCBestPractices();
+   this.AdvancedJDBCFeatures();
+   this.JDBCandPerformanceConsiderations();
   }
   imageObject = [{
     image: 'assets/img/newAjava.PNG',

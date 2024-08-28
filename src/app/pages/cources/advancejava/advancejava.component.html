@@ -20,66 +20,519 @@
             range of concepts and tools through the following</h3>
     </div>
     <div [@openClose]="isOpen ? true : false" class="open-close-container">
-        <p>Develop various business solutions utilizing Java's object-oriented principles, ensuring efficient and
+        <p class="pp">Develop various business solutions utilizing Java's object-oriented principles, ensuring efficient
+            and
             scalable code.</p>
     </div>
-    <button class="button-as-label" style="margin-left: 100px;margin-bottom: 12px;border-radius: 13px;"
-        (click)="toggleibl()" mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Implement Business
-            Logic</i></button>
+    <label class="button-as-label" style="margin-left: 100px;margin-bottom: 12px;border-radius: 13px;"
+        (click)="toggleibl()" mat-raised-button><i class="fas fa-location-arrow margin-bottom-15" >&nbsp;&nbsp;Implement Business
+            Logic</i></label>
 
     <div [@openClose]="isOpenpea ? true : false" class="open-close-container">
-        <p>Learn to build applications capable of executing tasks concurrently, improving performance and
+        <p class="pp">Learn to build applications capable of executing tasks concurrently, improving performance and
             responsiveness.</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="togglepea()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Parallel Execution in Applications</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;Parallel Execution in Applications</i></label>
 
     <div [@openClose]="isOpenif ? true : false" class="open-close-container">
-        <p>Utilize essential technologies such as Hibernate and Spring to enhance application functionality wherever
+        <p class="pp">Utilize essential technologies such as Hibernate and Spring to enhance application functionality
+            wherever
             necessary.</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggleif()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Integrate Frameworks</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;Integrate Frameworks</i></label>
 
     <div [@openClose]="isOpenwad ? true : false" class="open-close-container">
-        <p>Design and develop web applications using Struts, manage sessions, implement filters, and create dynamic web
+        <p class="pp">Design and develop web applications using Struts, manage sessions, implement filters, and create
+            dynamic web
             pages with JavaServer Pages (JSP).</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="togglewad()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Web Application Development</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;Web Application Development</i></label>
 
     <div [@openClose]="isOpenajf ? true : false" class="open-close-container">
-        <p>Explore advanced Java features like reflection, exception handling, inheritance, polymorphism, method
+        <p class="pp">Explore advanced Java features like reflection, exception handling, inheritance, polymorphism,
+            method
             overloading and overriding, design patterns, and abstract classes.</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggleajf()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Advanced Java Features</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;Advanced Java Features</i></label>
 
     <div [@openClose]="isOpendf ? true : false" class="open-close-container">
-        <p>Gain an understanding of DevOps principles, focusing on continuous integration and continuous deployment
+        <p class="pp">Gain an understanding of DevOps principles, focusing on continuous integration and continuous
+            deployment
             (CI/CD).</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledf()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;DevOps Fundamentals</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;DevOps Fundamentals</i></label>
 
     <div [@openClose]="isOpendp ? true : false" class="open-close-container">
-        <p>Use tools like Jenkins and Maven to automate the build and deployment processes.</p>
+        <p class="pp">Use tools like Jenkins and Maven to automate the build and deployment processes.</p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledp()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Deployment Processes</i></button>
+        mat-raised-button><i class="fas fa-location-arrow  margin-bottom-15">&nbsp;&nbsp;Deployment Processes</i></label>
 
     <div [@openClose]="isOpendpi ? true : false" class="open-close-container">
-        <p>Apply various design patterns to optimize and streamline your code during the development process.</p>
+        <p class="pp">Apply various design patterns to optimize and streamline your code during the development process.
+        </p>
     </div>
-    <button class="button-as-label"
+    <label class="button-as-label"
         style="margin-left: 100px;margin-left: 100px;margin-bottom: 12px;border-radius: 13px;" (click)="toggledpi()"
-        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Design Patterns Implementation</i></button>
+        mat-raised-button><i class="fas fa-location-arrow">&nbsp;&nbsp;Design Patterns Implementation</i></label>
+
+    <div class="brand_border">
+        <mat-divider class="custom-divider-syllabus"></mat-divider>
+        <i class="fas fa-handshake margin-top-14"></i>
+        <mat-divider class="divider-margin-syllabus"></mat-divider>
+    </div>
+    <div>
+        <h1 class="margin-top-50 blink">Java Training Course Syllabus - Advance Java</h1>
+    </div>
+    <div>
+        <h3 class="font-style-italic-syllabus">"The Advanced Java course is designed to deepen your understanding of
+            Java's powerful capabilities beyond the fundamentals. This syllabus focuses on core concepts such as
+            multithreading, networking, database connectivity, and advanced features like servlets, JSPs, and frameworks
+            like Hibernate and Spring, ensuring that students are well-equipped to build scalable and robust
+            applications in real-world environments."</h3>
+    </div>
+    <div class="example-card-syllabus">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h3 class="syllabus-title">Advanced Java Syllabus - Chapter No.1</h3>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="syllabus-title">Introduction to Advanced Java</p>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p> <i class="far fa-hand-point-right circle-custom-syllabus"></i>Recap of Core Java</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i>Java Enterprise Applications</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i>Advanced Java Topics Overview</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i>Web Technologies</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i>Frameworks and Libraries</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i> Java in Distributed Systems</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i> Security in Java</p>
+                <p><i class="far fa-hand-point-right circle-custom-syllabus"></i> Best Practices & Design Patterns</p>
+                <p style="direction: rtl;"><button mat-raised-button color="accent"><i
+                            class="far fa-hand-point-right">&nbsp;&nbsp;Click Here For Notes</i></button></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div class="example-card-syllabus">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h3 class="syllabus-title">Advanced Java Syllabus - Chapter No.2</h3>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="syllabus-title">JDBC - Java DataBase Connectivity</p>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <p class="p-header-styles"> <label class="lblClassExpand"
+                    (click)="expandAll()"
+                    mat-raised-button>Expand All | Collapse All</label>
+                   
+                <p class="p-header-styles"> <label class="lblClass"
+                    (click)="IntroductiontoJDBC()"
+                    mat-raised-button>Introduction to JDBC</label>
+                    <div [@openClose]="isOpenIntroductiontoJDBC ? true : false" class="open-close-container">
+                        <p class="ppp">Definition and purpose of JDBC in connecting Java applications to databases.
+                            Overview of how JDBC allows for executing SQL statements, retrieving results, and performing database operations.
+                        </p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCArchitecture()"
+                        mat-raised-button>JDBC Architecture</label>
+                        <div [@openClose]="isOpenJDBCArchitecture ? true : false" class="open-close-container">
+                            <p class="ppp">Explanation of the JDBC API and its components:
+                                Driver Manager: Manages a list of database drivers and establishes connections.
+                                Driver Interface: Interface that drivers implement to handle the communications with databases.
+                                Connection Interface: Represents a session with the database.
+                                Statement Interface: Used to execute SQL queries and update statements.
+                                ResultSet Interface: Handles the result returned from executing queries.
+                                PreparedStatement Interface: Precompiled SQL statements for efficient execution.
+                            </p>
+                        </div>
+               
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TypesofJDBCDrivers()"
+                        mat-raised-button>Types of JDBC Drivers</label>
+                        <div [@openClose]="isOpenTypesofJDBCDrivers ? true : false" class="open-close-container">
+                            <p class="ppp">Type 1: JDBC-ODBC Bridge Driver: Converts JDBC calls into ODBC calls (not commonly used anymore).
+                                Type 2: Native-API Driver: Converts JDBC calls into native database calls.
+                                Type 3: Network Protocol Driver: Converts JDBC calls into a database-independent network protocol.
+                                Type 4: Thin Driver: Directly converts JDBC calls into the database's native protocol (most commonly used).
+                            </p>
+                        </div>
+               
+                   <p class="p-header-styles"> <label class="lblClass"
+                    (click)="StepstoConnecttoaDatabaseUsingJDBC()"
+                    mat-raised-button>Steps to Connect to a Database Using JDBC</label>
+                    <div [@openClose]="isOpenStepstoConnecttoaDatabaseUsingJDBC ? true : false" class="open-close-container">
+                        <p class="ppp">Loading the JDBC Driver: Using Class.forName() or DriverManager to load the JDBC driver.
+                            Establishing a Connection: Using DriverManager.getConnection() to establish a connection with the database.
+                            Creating a Statement: Using Connection.createStatement() or Connection.prepareStatement() to execute SQL queries.
+                            Executing SQL Queries: Executing queries using executeQuery() for SELECT statements or executeUpdate() for INSERT, UPDATE, DELETE.
+                            Processing ResultSet: Retrieving and processing data from ResultSet objects.
+                            Closing Connections: Ensuring proper closing of Connection, Statement, and ResultSet to avoid resource leakage.
+                        </p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCStatements()"
+                        mat-raised-button>JDBC Statements</label>
+                        <div [@openClose]="isOpenJDBCStatements ? true : false" class="open-close-container">
+                            <p class="ppp">Statement: Used for executing simple SQL queries.
+                                PreparedStatement: Used for executing parameterized queries to improve performance and prevent SQL injection.
+                                CallableStatement: Used to execute stored procedures.
+                            </p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TransactionsinJDBC()"
+                        mat-raised-button>Transactions in JDBC</label>
+                        <div [@openClose]="isOpenTransactionsinJDBC ? true : false" class="open-close-container">
+                            <p class="ppp">Overview of transaction management in JDBC.
+                                Auto-commit mode: Explanation of how JDBC operates by default in auto-commit mode and how to disable it using setAutoCommit(false).
+                                Commit and Rollback: Using Connection.commit() and Connection.rollback() to manually control transactions.
+                            </p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="BatchProcessinginJDBC()"
+                        mat-raised-button>Batch Processing in JDBC</label>
+                        <div [@openClose]="isOpenBatchProcessinginJDBC ? true : false" class="open-close-container">
+                            <p class="ppp">Introduction to executing multiple SQL statements in a single batch.
+                                Benefits of batch processing for performance improvement.
+                                Using addBatch() and executeBatch() methods to process SQL statements in bulk.
+                            </p>
+                        </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCErrorHandling()"
+                        mat-raised-button>JDBC Error Handling</label>
+                        <div [@openClose]="isOpenJDBCErrorHandling ? true : false" class="open-close-container">
+                            <p class="ppp">Overview of handling SQL exceptions.
+                                Importance of SQLException class and its methods (getMessage(), getSQLState(), getErrorCode()).
+                                Best practices for error handling in JDBC applications.
+                            </p>
+                        </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCDataTypes()"
+                        mat-raised-button>JDBC Data Types</label>
+                        <div [@openClose]="isOpenJDBCDataTypes ? true : false" class="open-close-container">
+                            <p class="ppp">Mapping of SQL data types to Java data types (e.g., VARCHAR to String, INTEGER to int).
+                                Usage of getXXX() and setXXX() methods in ResultSet and PreparedStatement for data retrieval and setting values.
+                            </p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="ConnectionPooling()"
+                        mat-raised-button>Connection Pooling</label>
+                        <div [@openClose]="isOpenConnectionPooling ? true : false" class="open-close-container">
+                            <p class="ppp">Explanation of connection pooling and its importance for performance.
+                                Overview of connection pool libraries like Apache DBCP, C3P0, HikariCP, and how to configure them with JDBC.
+                            </p>
+                        </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCwithORMObjectRelationalMapping()"
+                        mat-raised-button>JDBC with ORM (Object Relational Mapping)</label>
+                        <div [@openClose]="isOpenJDBCwithORMObjectRelationalMapping? true : false" class="open-close-container">
+                            <p class="ppp">Overview of how ORM frameworks like Hibernate internally use JDBC for database operations.
+                                Comparison between raw JDBC and ORM solutions, highlighting the advantages of each.
+                            </p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCBestPractices()"
+                        mat-raised-button>JDBC Best Practices</label>
+                        <div [@openClose]="isOpenJDBCBestPractices ? true : false" class="open-close-container">
+                            <p class="ppp">Ensure proper closing of resources in the finally block or use try-with-resources (Java 7 and above).
+                                Use PreparedStatement to prevent SQL injection attacks.
+                                Use connection pooling for efficient resource management.
+                                Proper exception handling and logging.
+                            </p>
+                        </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="AdvancedJDBCFeatures()"
+                        mat-raised-button> Advanced JDBC Features</label>
+                        <div [@openClose]="isOpenAdvancedJDBCFeatures ? true : false" class="open-close-container">
+                            <p class="ppp">Scrollable and Updatable ResultSets: Navigating through result sets and making changes to the data.
+                                Metadata: Accessing database and result set metadata using DatabaseMetaData and ResultSetMetaData.
+                                Savepoints: Use of savepoints in transactions for finer control.
+                            </p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCandPerformanceConsiderations()"
+                        mat-raised-button>JDBC and Performance Considerations</label>
+                        <div [@openClose]="isOpenJDBCandPerformanceConsiderations ? true : false" class="open-close-container">
+                            <p class="ppp">Tips for optimizing JDBC performance, such as using batch processing, connection pooling, and efficient query design.
+                                Profiling and monitoring JDBC performance in large-scale applications.
+                                These points give a comprehensive overview of JDBC and its key components, as well as best practices for using it effectively in Java applications.
+                        </div>
+
+
+                <p style="direction: rtl;"><button mat-raised-button color="accent"><i
+                            class="far fa-hand-point-right">&nbsp;&nbsp;Click Here For Notes</i></button></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div class="example-card-syllabus">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h3 class="syllabus-title">Advanced Java Syllabus - Chapter No.3</h3>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="syllabus-title">Core Servlet Concepts</p>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <p class="p-header-styles"> <label class="lblClassExpand"
+                    (click)="expandAll()"
+                    mat-raised-button>Expand All | Collapse All</label>
+                   
+                <p class="p-header-styles"> <label class="lblClass"
+                    (click)="IntroductiontoJDBC()"
+                    mat-raised-button>Introduction to Servlets</label>
+                    <div [@openClose]="isOpenIntroductiontoJDBC ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Basics of Servlets and the Servlet API</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Servlet lifecycle (init, service, destroy)</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="HandlingHTTPRequestsandResponses()"
+                        mat-raised-button>Handling HTTP Requests and Responses</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>GET vs POST methods</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Processing request parameters and headers</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Sending responses and setting response headers</p>
+                        </div>
+               
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TypesofJDBCDrivers()"
+                        mat-raised-button>ServletConfig and ServletContext</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Differences and use cases</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Application-wide and servlet-specific configurations</p>
+                        </div>
+               
+                   <p class="p-header-styles"> <label class="lblClass"
+                    (click)="StepstoConnecttoaDatabaseUsingJDBC()"
+                    mat-raised-button>Session Management</label>
+                    <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Handling sessions with HttpSession</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Session tracking techniques (cookies, URL rewriting)</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Session timeout and invalidation</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCStatements()"
+                        mat-raised-button>Servlet Filters</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Purpose of filters</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Implementing logging, authentication, and input validation filters</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Filter chaining</p>
+                        </div>
+
+                   <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TransactionsinJDBC()"
+                        mat-raised-button>Request Dispatching</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Forwarding and including resources using RequestDispatcher</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Communication between servlets (Servlet collaboration)</p>
+                        </div>
+
+                <p style="direction: rtl;"><button mat-raised-button color="accent"><i
+                            class="far fa-hand-point-right">&nbsp;&nbsp;Click Here For Notes</i></button></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div class="example-card-syllabus">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h3 class="syllabus-title">Advanced Java Syllabus - Chapter No.4</h3>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="syllabus-title">Advanced Servlet Topics</p>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <p class="p-header-styles"> <label class="lblClassExpand"
+                    (click)="expandAll()"
+                    mat-raised-button>Expand All | Collapse All</label>
+                   
+                <p class="p-header-styles"> <label class="lblClass"
+                    (click)="IntroductiontoJDBC()"
+                    mat-raised-button>Asynchronous Servlets</label>
+                    <div [@openClose]="isOpenIntroductiontoJDBC ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Introduction to asynchronous processing in servlets</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Implementing non-blocking I/O</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="HandlingHTTPRequestsandResponses()"
+                        mat-raised-button>Servlet Listeners</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Implementing and using servlet lifecycle listeners</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Listeners for session, context, and request events</p>
+                        </div>
+               
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TypesofJDBCDrivers()"
+                        mat-raised-button>File Upload and Download</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Handling file uploads using servlets</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Serving files and managing downloads</p>
+                        </div>
+               
+                   <p class="p-header-styles"> <label class="lblClass"
+                    (click)="StepstoConnecttoaDatabaseUsingJDBC()"
+                    mat-raised-button>Security in Servlets</label>
+                    <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Securing servlets with authentication and authorization</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Implementing HTTPS and secure cookies</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Using Java EE security annotations</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCStatements()"
+                        mat-raised-button>Inter-servlet Communication</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Using context attributes to share data between servlets</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Sending data across requests and sessions</p>
+                        </div>
+
+                <p style="direction: rtl;"><button mat-raised-button color="accent"><i
+                            class="far fa-hand-point-right">&nbsp;&nbsp;Click Here For Notes</i></button></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div class="example-card-syllabus">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <h3 class="syllabus-title">Advanced Java Syllabus - Chapter No.5</h3>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <p class="syllabus-title">Core JSP Concepts</p>
+                    </mat-panel-title>
+
+                </mat-expansion-panel-header>
+
+                <p class="p-header-styles"> <label class="lblClassExpand"
+                    (click)="expandAll()"
+                    mat-raised-button>Expand All | Collapse All</label>
+                   
+                <p class="p-header-styles"> <label class="lblClass"
+                    (click)="IntroductiontoJDBC()"
+                    mat-raised-button>Introduction to JSP</label>
+                    <div [@openClose]="isOpenIntroductiontoJDBC ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>What is JSP and its role in web development?</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Differences between JSP and Servlets</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>JSP lifecycle (translation, compilation, execution)</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="HandlingHTTPRequestsandResponses()"
+                        mat-raised-button>JSP Syntax and Directives</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Scriptlets (<% %>)</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Expressions (<%= %>)</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Declarations (<%! %>)</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Page directives (<%&#64; page %>, <%&#64; include %>, <%&#64; taglib %>)</p>
+                        </div>
+               
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="TypesofJDBCDrivers()"
+                        mat-raised-button>JSP Implicit Objects</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Overview of implicit objects (request, response, session, application, out, pageContext, etc.)</p>
+                        </div>
+               
+                   <p class="p-header-styles"> <label class="lblClass"
+                    (click)="StepstoConnecttoaDatabaseUsingJDBC()"
+                    mat-raised-button>JSP Standard Actions</label>
+                    <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                        <p><i class="fa-solid fa-circle circle-custom"></i>jsp:include, jsp:forward, jsp:param</p>
+                        <p><i class="fa-solid fa-circle circle-custom"></i>Dynamic inclusion of resources</p>
+                    </div>
+
+                    <p class="p-header-styles"> <label class="lblClass"
+                        (click)="JDBCStatements()"
+                        mat-raised-button>JSP Expression Language (EL)</label>
+                        <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Accessing data in JSP with EL</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>EL syntax and operators</p>
+                            <p><i class="fa-solid fa-circle circle-custom"></i>Accessing scoped variables (request, session, application)</p>
+                        </div>
+
+                        <p class="p-header-styles"> <label class="lblClass"
+                            (click)="JDBCStatements()"
+                            mat-raised-button>Form Handling with JSP</label>
+                            <div [@openClose]="isOpenHandlingHTTPRequestsandResponses ? true : false" class="open-close-container">
+                                <p><i class="fa-solid fa-circle circle-custom"></i>Capturing and processing form data</p>
+                                <p><i class="fa-solid fa-circle circle-custom"></i>Handling GET and POST requests</p>
+                            </div>
+
+                <p style="direction: rtl;"><button mat-raised-button color="accent"><i
+                            class="far fa-hand-point-right">&nbsp;&nbsp;Click Here For Notes</i></button></p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
     <div>
         <app-footer></app-footer>
     </div>
