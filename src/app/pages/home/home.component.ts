@@ -15,4 +15,14 @@ export class HomeComponent {
   longText6 = `Learn at your own pace through our easy to navigate Responsive Website.`;
   longText7 =  `Learn through high-quality & easy to understand video lectures.`;
   longText8 = `Practice chapter-wise Quizzes & solve Assignments to learn and revise concepts.`;
+
+
+courses = [
+  {
+    title: 'Web Development',
+    description: 'Learn the fundamentals of web development.',
+    image: 'assets/web/web-2.jpg'
+
+  },
+]
 }
