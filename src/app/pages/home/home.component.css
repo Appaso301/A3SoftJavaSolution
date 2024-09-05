@@ -2,23 +2,13 @@
   background-color: #fad7f84f;;
 }
 @keyframes blink {
-  0% {
-      color: red;
-  }
-
-  50% {
-      color: #ea8a16
-  }
-
-  100% {
-      color: white;
-  }
+  0% {color: red;}
+  50% { color: #ea8a16}
+  100% {color: white;}
 }
-
 .blink {
   animation: blink 3s infinite;
 }
-
 .full-page-image {
   background: url(/assets/academy-banner.jpg) no-repeat center center fixed;
   align-items: center;
@@ -28,7 +18,6 @@
   margin-left: 45px;
   margin-top: -9px;
   }
-  
   .content {
     background: rgba(0, 0, 0, 0.3);
     padding: 20px;
@@ -36,22 +25,18 @@
     width: 1197px;
     margin-top: 10px;
   }
-  
   h1 {
     font-size: 48px;
     margin-bottom: 20px;
-  }
-  
+  }  
   p {
     font-size: 17px;
     margin-bottom: 30px;
     font-style: italic;
-  }
-  
+  }  
   button {
     font-size: 18px;
   }   
-
   .background {
     background-color: #fad7f84f;
   }
@@ -77,13 +62,11 @@
   box-shadow: 0px 0px 15px rgba(112, 45, 45, 0.1);
   flex: 1;
   width: 274px;
-
 }
 .cards-display{
   display: flex;
   margin-top: 40px;
   height: 350px;
-
 }
 .card-vandm {
   background-color: aliceblue;
@@ -94,33 +77,27 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
-
 .card-vandm:hover {
   transform: translateY(-5px);
 }
-
 .card-vandm i.material-icons {
   font-size: 50px;
   color: #007bff;
   margin-bottom: 20px;
 }
-
 .card-vandm h3 {
   font-size: 20px;
   margin-bottom: 15px;
   color: #333;
 
 }
-
 .card-vandm p{
   font-size: 15px;
 }
 .vandmimg {
   height: 50px;
-  width: 50px;
-  
+  width: 50px; 
 }
-
 .epm{
   display: block;
     margin-left: auto;
@@ -136,14 +113,12 @@
     font-size: 250%; 
     margin-top: 25px;
   }
- 
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 20px;
 }
-
 .container-card {
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -155,7 +130,6 @@
  text-align: center;
  font-size: 30px;
 }
-
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -165,24 +139,19 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
-
 .card:hover {
     transform: translateY(-5px);
 }
-
 .card i.material-icons {
     font-size: 50px;
     color: #007bff;
     margin-bottom: 20px;
 }
-
 .card h3 {
     font-size: 18px;
     margin-bottom: 15px;
     color: #333;
 }
-
-/* styles.css */
 .bat{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #e9ecef;
@@ -203,7 +172,6 @@
   display: block;
   object-fit: cover;
 }
-
 .text-container {
   flex: 1;
   padding: 40px;
@@ -211,30 +179,19 @@
   margin-right: 40px;
   border-radius: 15px;
 }
-
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
-
 h1 span {
   color: #ff4500;
   font-weight: 700;
 }
-
-/* p {
-  color: #6c757d;
-  font-size: 18px;
-  margin-bottom: 25px;
-  line-height: 1.6;
-}  */
-
 .features {
   display: flex;
   gap: 25px;
   justify-content: space-between;
 }
-
 .feature-box {
   background: #ffffff;
   padding: 20px;
@@ -244,25 +201,19 @@ h1 span {
   flex: 1;
   transition: transform 0.3s ease-in-out;
 }
-
 .feature-box:hover {
   transform: translateY(-10px);
 }
-
 .icon {
   font-size: 40px;
   color: #ff4500;
   display: block;
   margin-bottom: 15px;
 }
-
 h3 {
   font-size: 20px;
   color: #343a40;
 }
-
-
-/* Global Styles */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -270,55 +221,38 @@ body {
   padding: 0;
   background-color: #eef2f3;
 }
-
-/* Header Styles */
 header {
   background: linear-gradient(to right, #0066cc, #33ccff);
   color: white;
   padding: 20px 0;
   text-align: center;
 }
-
 header h1 {
   margin: 0;
   font-size: 2.5em;
 }
-
 nav ul {
   list-style: none;
   padding: 0;
 }
-
 nav ul li {
   display: inline;
   margin: 0 20px;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
-
 nav ul li a:hover {
   color: #ffcc00; /* Highlight color on hover */
 }
-
-/* Main Styles */
 .main {
   padding: 20px;
   max-width: 1200px;  
   margin: 0 auto;
 }
-
-/* .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}*/
-
-/* Box Styles */
 .box {
   background: white;
   border-radius: 10px;
@@ -329,43 +263,33 @@ nav ul li a:hover {
   min-width: 300px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .box h2 {
   color: #0066cc;
   border-bottom: 3px solid #33ccff;
   padding-bottom: 10px;
 }
-
 .box:hover {
   transform: translateY(-5px); /* Lift effect on hover */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-/* Footer Styles */
 footer {
   text-align: center;
   padding: 20px 0;
   background: #0066cc;
   color: white;
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
   nav ul li {
       display: block;
       margin: 10px 0;
   }
-
   .container {
       flex-direction: column; /* Stacks boxes vertically on smaller screens */
   }
-
   main {
       padding: 10px;
   }
 }
-
-
 .contact-section {
   background-color: #0b5480;
   color: white;
@@ -375,7 +299,6 @@ footer {
   align-items: center;
    width: 1156px;
     border-radius: 10px;
-  /* margin-top: 25px; */
 }
 .man{
     margin-bottom: 25px;
@@ -388,14 +311,12 @@ footer {
   align-items: center;
   width: 100%;
 }
-
 .contact-content h2 {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
   padding-right: 20px;
 }
-
 .contact-button {
   background-color: white;
   color: #0b5480;
@@ -408,17 +329,13 @@ footer {
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
-
 .contact-button:hover {
   background-color: #e0e0e0;
 }
-
 .contact-button span {
   margin-left: 10px;
   font-size: 18px;
 }
-
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -426,7 +343,6 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-
 .why-choose-section {
   width: 1196px;
   height: 500px;
@@ -452,7 +368,6 @@ body {
   background-color: white;
   margin-top: 20px;
 }
-
 .inner-details {
   display: flex;
 }
@@ -460,7 +375,6 @@ body {
   margin-top: 40px;
   margin-right: 10px;
   height: 350px;
- 
 }
 .div-design:hover {
   transform: translateY(-5px); /* Lift effect on hover */
@@ -474,7 +388,6 @@ body {
   color: rgb(248, 248, 248)  ;
   }
 }
-
 .p-style{
   font-style: normal;
 }
@@ -484,42 +397,33 @@ body {
   color: #11a4e0;
   font-size: x-large;
 }
-
 .whyusImg {
   width: 434px;
   height: 450px;
 }
-
 .why-choose-section h2{  
   font-size: 45px;
   margin-bottom: 20px;
   color: #333;
 }
-
 .why-choose-section ul {
   list-style-type: none;
   padding: 0;
   font-size: 20px;
 }
-
 .why-choose-section li {
   margin-bottom: 20px;
   line-height: 1.6;
 }
-
 .why-choose-section li strong {
   color: #2b2b2b;
 }
-
-
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   padding: 20px;
   margin-top: 5px;
 } 
-
 .LAPTOP{
   display: flex;
   justify-content: space-between;
@@ -527,7 +431,6 @@ body {
   gap: 12px;
   margin-top: 50px;
 }
-
 .card {
   background-color: white;
   padding: 20px;
@@ -536,28 +439,23 @@ body {
   box-shadow: 0px 0px 15px rgba(112, 45, 45, 0.1);
   flex: 1;
 }
-
 .card h3 {
   color: #333;
   margin-bottom: 15px;
   font-size: 24px;
 }
-
 .card h3 .highlight {
   color: #ff6600;
 }
-
 .card p {
   font-size: 16px;
   color: #555;
   margin-bottom: 10px;
 }
-
 .card ul {
   list-style-type: none;
   padding-left: 0;
 }
-
 .card ul li {
   font-size: 16px;
   color: #555;
@@ -569,6 +467,3 @@ body {
   color: white;
   cursor: pointer;
 }
-
-
-
