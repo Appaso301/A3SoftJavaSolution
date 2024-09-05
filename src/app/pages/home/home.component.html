@@ -1,39 +1,51 @@
-<div class="full-page-image">
+<div class="container background">
+  <div class="full-page-image">
     <div class="content">
-      <h1>Welcome to A3 Soft Java Solution Academy</h1>
-      <p>Your gateway to mastering IT skills and advancing your career.</p>
-      <button mat-raised-button color="primary">Explore Courses</button>
+      <h1 class="blink">Welcome to A3SOFT JAVA SOLUTIONS </h1>
+      <h2>Your gateway to mastering IT skills and advancing your career.</h2>
+      <button (click)="courceClick()" mat-raised-button color="accent"><i
+          class="far fa-hand-point-right"></i>&nbsp;&nbsp;Explore Courses</button>
     </div>
-  
-  </div> 
-  <div class="container background">
-    <div class="imgalign">
-      <img src="assets/img/web-3.jpg" alt=" ">
+
+  </div>
+  <div class="imgalign">
+    <img class="imgstyle" src="assets/img/web-3.jpg" alt=" ">
+    <div class="main">
+      <div class="emp blink " style="color: red;">
+        <marquee behavior="alternate">Vision & Mission</marquee>
+      </div>
+      <div class="cards-display">
+        <div class="card-vandm">
+          <img class="vandmimg" src="assets/img/vision.png" alt=" ">
+          <h3>Our Vision</h3>
+          <p>To empower individuals with the skills and knowledge required to thrive in the digital world and lead in
+            the IT
+            industry and To bridge the skills gap in the IT sector by delivering cutting-edge training and empowering
+            individuals to excel in tech-driven careers.</p>
+        </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        <div class="card-vandm">
+          <img class="vandmimg" src="assets/img/mission.png" alt=" ">
+          <h3>Our Mission</h3>
+          <p>To bridge academic concepts with real-world applications, ensuring learners gain the technical expertise
+            and practical experience needed to succeed in the IT industry and To provide high-quality education and
+            training in IT through innovative teaching methods, hands-on projects, and
+            industry exposure.</p>
+        </div>
+      </div>
     </div>
   </div>
-  
-  <div class="main">
-    <div class="emp">Vision & Mission</div>
-    <section id="vision">
-      <h2>Our Vision</h2>
-      <p>To empower individuals with the skills and knowledge required to thrive in the digital world and lead in the IT
-        industry.</p>
-    </section>
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <p>To provide high-quality education and training in IT through innovative teaching methods, hands-on projects, and
-        industry exposure.</p>
-    </section>
-  </div>
+
   <div class="man">
     <div class="contact-section">
       <div class="contact-content">
         <h2>Contact Us to Discuss How We Can Help You Get Trained in New Skills.</h2>
-        <a href="#" class="contact-button">Contact Us <span>&#x2192;</span></a>
+        <a (click)="contactClick()" class="contact-button">Contact Us <span>&#x2192;</span></a>
       </div>
     </div>
   </div>
-  
+
   <div class="container-card">
     <div class="card">
       <i class="material-icons">help_outline</i>
@@ -41,11 +53,12 @@
       <p>Interactive doubt sessions ensure that students can clarify their queries and reinforce their understanding of
         the subject. These sessions are designed to address individual learning needs.</p>
     </div>
-  
+
     <div class="card">
       <i class="material-icons">assignment</i>
       <h3>DAILY ASSESSMENT</h3>
-      <p>Regular assessments ensure continuous engagement and understanding of the subject matter. Daily assessments help
+      <p>Regular assessments ensure continuous engagement and understanding of the subject matter. Daily assessments
+        help
         reinforce learning and identify areas that need improvement.</p>
     </div>
     <div class="card">
@@ -74,70 +87,85 @@
     </div>
   </div>
   <div class="bat">
-    <div class="container">
-      <div class="image-container">
-        <img src="assets/web/web-4.jpg " alt="Corporate Training Team">
-      </div>
-      <div class="text-container">
-        <h1>Benefits Of <span>Corporate Training</span></h1>
-        <p>Training is more than enhancing qualities or skills. It is the ability to help capable and independent-thinking
-          people; together, build relationships and careers.</p>
-        <div class="features">
-          <div class="feature-box">
-            <span class="icon">👨‍💻</span>
-            <h3>Professional Training Courses</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">🖥️</span>
-            <h3>Live Interactive Learning</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">👩‍🏫</span>
-            <h3>IT Professionals as Instructors</h3>
-          </div>
+    <div class="image-container">
+      <img src="assets/img/web-4.jpg " alt="Corporate Training Team">
+    </div>
+    <div class="text-container">
+      <h1 st>Benefits Of <span>Corporate Training</span></h1>
+      <p>Training is more than enhancing qualities or skills. It is the ability to help capable and independent-thinking
+        people; together, build relationships and careers.</p>
+      <div class="features">
+        <div class="feature-box">
+          <span class="icon">👨‍💻</span>
+          <h3>Professional Training Courses</h3>
+        </div>
+        <div class="feature-box">
+          <span class="icon">🖥️</span>
+          <h3>Live Interactive Learning</h3>
+        </div>
+        <div class="feature-box">
+          <span class="icon">👩‍🏫</span>
+          <h3>IT Professionals as Instructors</h3>
         </div>
       </div>
     </div>
   </div>
-  
-  <div>
-    <div class="why-choose-section">
-      <h2>Why Choose A3Soft Java Solution ?</h2>
-      <ul>
-        <li>
-          <strong>Experienced and Certified Trainers:</strong> Our team has seasoned IT professionals with decades of
-          experience in the industry. Each trainer is certified in their respective fields, ensuring you receive
-          up-to-date knowledge.
-        </li>
-        <li>
-          <strong>Comprehensive Curriculum:</strong> We offer a wide range of IT courses in Pune, designed to cater to
-          different learning needs and career choices in the future. Our curriculum is crafted to align with the latest
-          industry trends and equip you with the most in-demand skills.
-        </li>
-        <li>
-          <strong>Focus on Practical Learning:</strong> We believe in a hands-on approach to learning. Our coding classes
-          in Pune go beyond theoretical knowledge, providing you with opportunities to apply your skills through
-          real-world projects and simulations.
-        </li>
-        <li>
-          <strong>100% Placement Guarantee:</strong> We are so confident that we offer IT courses in Pune with placement
-          with a 100% placement guarantee. Upon successful course completion, we will assist you in securing a placement
-          in a top IT company.
-        </li>
-        <li>
-          <strong>Career Support Services:</strong> Our commitment to your success doesn’t end after training. We offer
-          dedicated career support services, including resume building and interview preparation.
-        </li>
-      </ul>
+
+
+  <div class="why-choose-section">
+    <div class="inner-why-choose-section">
+      <div class="inner-details">
+        <img class="whyusImg" src="assets/img/whyus.png">
+        <div class="div-design">
+          <i class="fa-solid fa-chalkboard-teacher whyus-icon"></i><br>
+          <p class="p-style"><strong style="font-style: italic;">Experienced and Certified Trainers:</strong> Our team
+            has seasoned IT professionals with decades of
+            experience in the industry. Each trainer is certified in their respective fields, ensuring you receive
+            up-to-date knowledge.</p>
+        </div>
+        <div class="div-design">
+          <i class="fa-solid fa-book-open whyus-icon"></i><br>
+          <p class="p-style"><strong style="font-style: italic;">Comprehensive Curriculum:</strong> We offer a wide
+            range of IT courses in Pune, designed to cater to
+            different learning needs and career choices in the future. Our curriculum is crafted to align with the
+            latest
+            industry trends and equip you with the most in-demand skills.</p>
+        </div>
+        <div class="div-design">
+          <i class="fa-solid fa-laptop-code whyus-icon"></i><br>
+          <p class="p-style"><strong style="font-style: italic;">Focus on Practical Learning:</strong> We believe in a
+            hands-on approach to learning. Our coding classes
+            in Pune go beyond theoretical knowledge, providing you with opportunities to apply your skills through
+            real-world projects and simulations.</p>
+        </div>
+        <div class="div-design">
+          <i class="fa-solid fa-briefcase whyus-icon"></i><br>
+          <p class="p-style"><strong style="font-style: italic;">100% Placement Guarantee:</strong> We are so confident
+            that we offer IT courses in Pune with placement
+            with a 100% placement guarantee. Upon successful course completion, we will assist you in securing a
+            placement
+            in a top IT company.</p>
+        </div>
+        <div class="div-design">
+          <i class="fa-solid fa-life-ring whyus-icon"></i><br>
+          <p class="p-style"><strong style="font-style: italic;">Career Support Services:</strong> Our commitment to
+            your success doesn’t end after training. We offer
+            dedicated career support services, including resume building and interview preparation.</p>
+        </div>
+      </div>
+
     </div>
   </div>
-  <div>
+
+  <div class="training-institute-section">
     <div class="LAPTOP">
       <div class="card">
         <h3>IT Training <span class="highlight">Institute</span></h3>
-        <p>Technogeeks is a Leading IT Training Institute in Pune for IT Courses with placement.</p>
-        <p>We provide real-time project training with placement assistance.</p>
-        <p>Technogeeks job-oriented IT classes include the courses –</p>
+        <p>A3Soft Java Solution is a growing IT Training Institute in Pune, committed to helping students launch their
+          careers in the tech industry.</p>
+        <p>We offer real-time project training combined with placement assistance to help you succeed in your career.
+        </p>
+        <p>A3Soft Java Solutions job-oriented IT classes include the courses –</p>
         <ul>
           <li>Data Science, Python Programming, AWS Training,</li>
           <li>Full Stack Web Development Courses,</li>
@@ -147,338 +175,11 @@
       </div>
       <div class="card">
         <h3>Software Training <span class="highlight">Institute</span></h3>
-        <p>With 8+ yrs of Software training and placement experience, we trained 10000+ students who were placed in IT
-          companies like TCS, Infosys, and Cognizant.</p>
-        <p>You will learn software courses like Informatica Powercenter, Programming languages, web frameworks, cloud
-          platforms, and software testing frameworks.</p>
-      </div>
-      <div class="card">
-        <h3>Computer Programming <span class="highlight">Courses</span></h3>
-        <p>Learn the basics of Coding with computer programming courses in Pune. Hands-on with industry professionals in
-          programming languages like Python, Java, C, C++, Javascript.</p>
-        <p>Blended mode of training (Online & Classroom) for uninterrupted learning.</p>
-      </div>
-    </div>
-  </div>
-  <div>
-    <app-footer></app-footer>
-  </div><div class="full-page-image">
-    <div class="content">
-      <h1>Welcome to A3 Soft Java Solution Academy</h1>
-      <p>Your gateway to mastering IT skills and advancing your career.</p>
-      <button mat-raised-button color="primary">Explore Courses</button>
-    </div>
-  
-  </div> 
-  <div class="container background">
-    <div class="imgalign">
-      <img src="assets/img/web-3.jpg" alt=" ">
-    </div>
-  </div>
-  
-  <div class="main">
-    <div class="emp">Vision & Mission</div>
-    <section id="vision">
-      <h2>Our Vision</h2>
-      <p>To empower individuals with the skills and knowledge required to thrive in the digital world and lead in the IT
-        industry.</p>
-    </section>
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <p>To provide high-quality education and training in IT through innovative teaching methods, hands-on projects, and
-        industry exposure.</p>
-    </section>
-  </div>
-  <div class="man">
-    <div class="contact-section">
-      <div class="contact-content">
-        <h2>Contact Us to Discuss How We Can Help You Get Trained in New Skills.</h2>
-        <a href="#" class="contact-button">Contact Us <span>&#x2192;</span></a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-card">
-    <div class="card">
-      <i class="material-icons">help_outline</i>
-      <h3>DOUBT SESSION</h3>
-      <p>Interactive doubt sessions ensure that students can clarify their queries and reinforce their understanding of
-        the subject. These sessions are designed to address individual learning needs.</p>
-    </div>
-  
-    <div class="card">
-      <i class="material-icons">assignment</i>
-      <h3>DAILY ASSESSMENT</h3>
-      <p>Regular assessments ensure continuous engagement and understanding of the subject matter. Daily assessments help
-        reinforce learning and identify areas that need improvement.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">build</i>
-      <h3>PRACTICAL SESSION</h3>
-      <p>Hands-on practical sessions allow students to apply theoretical knowledge in real-world scenarios. Practical
-        experience enhances understanding and retention of Java concepts.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">work</i>
-      <h3>LIVE PROJECT SESSION</h3>
-      <p>Working on live projects gives students a taste of real-world development scenarios. It helps bridge the gap
-        between theory and practical application.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">schedule</i>
-      <h3>FLEXIBLE SCHEDULE</h3>
-      <p>A flexible schedule accommodates different learning styles and time constraints. It allows students to balance
-        their learning with other commitments.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">support_agent</i>
-      <h3>QUICK SUPPORT</h3>
-      <p>Immediate assistance and support address queries and challenges promptly. Quick support fosters a positive
-        learning experience and prevents roadblocks.</p>
-    </div>
-  </div>
-  <div class="bat">
-    <div class="container">
-      <div class="image-container">
-        <img src="assets/web/web-4.jpg " alt="Corporate Training Team">
-      </div>
-      <div class="text-container">
-        <h1>Benefits Of <span>Corporate Training</span></h1>
-        <p>Training is more than enhancing qualities or skills. It is the ability to help capable and independent-thinking
-          people; together, build relationships and careers.</p>
-        <div class="features">
-          <div class="feature-box">
-            <span class="icon">👨‍💻</span>
-            <h3>Professional Training Courses</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">🖥️</span>
-            <h3>Live Interactive Learning</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">👩‍🏫</span>
-            <h3>IT Professionals as Instructors</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div>
-    <div class="why-choose-section">
-      <h2>Why Choose A3Soft Java Solution ?</h2>
-      <ul>
-        <li>
-          <strong>Experienced and Certified Trainers:</strong> Our team has seasoned IT professionals with decades of
-          experience in the industry. Each trainer is certified in their respective fields, ensuring you receive
-          up-to-date knowledge.
-        </li>
-        <li>
-          <strong>Comprehensive Curriculum:</strong> We offer a wide range of IT courses in Pune, designed to cater to
-          different learning needs and career choices in the future. Our curriculum is crafted to align with the latest
-          industry trends and equip you with the most in-demand skills.
-        </li>
-        <li>
-          <strong>Focus on Practical Learning:</strong> We believe in a hands-on approach to learning. Our coding classes
-          in Pune go beyond theoretical knowledge, providing you with opportunities to apply your skills through
-          real-world projects and simulations.
-        </li>
-        <li>
-          <strong>100% Placement Guarantee:</strong> We are so confident that we offer IT courses in Pune with placement
-          with a 100% placement guarantee. Upon successful course completion, we will assist you in securing a placement
-          in a top IT company.
-        </li>
-        <li>
-          <strong>Career Support Services:</strong> Our commitment to your success doesn’t end after training. We offer
-          dedicated career support services, including resume building and interview preparation.
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div>
-    <div class="LAPTOP">
-      <div class="card">
-        <h3>IT Training <span class="highlight">Institute</span></h3>
-        <p>Technogeeks is a Leading IT Training Institute in Pune for IT Courses with placement.</p>
-        <p>We provide real-time project training with placement assistance.</p>
-        <p>Technogeeks job-oriented IT classes include the courses –</p>
-        <ul>
-          <li>Data Science, Python Programming, AWS Training,</li>
-          <li>Full Stack Web Development Courses,</li>
-          <li>Automation Testing Courses (Selenium),</li>
-          <li>Data Warehousing (ETL Testing & Development with Informatica).</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Software Training <span class="highlight">Institute</span></h3>
-        <p>With 8+ yrs of Software training and placement experience, we trained 10000+ students who were placed in IT
-          companies like TCS, Infosys, and Cognizant.</p>
-        <p>You will learn software courses like Informatica Powercenter, Programming languages, web frameworks, cloud
-          platforms, and software testing frameworks.</p>
-      </div>
-      <div class="card">
-        <h3>Computer Programming <span class="highlight">Courses</span></h3>
-        <p>Learn the basics of Coding with computer programming courses in Pune. Hands-on with industry professionals in
-          programming languages like Python, Java, C, C++, Javascript.</p>
-        <p>Blended mode of training (Online & Classroom) for uninterrupted learning.</p>
-      </div>
-    </div>
-  </div>
-  <div>
-    <app-footer></app-footer>
-  </div><div class="full-page-image">
-    <div class="content">
-      <h1>Welcome to A3 Soft Java Solution Academy</h1>
-      <p>Your gateway to mastering IT skills and advancing your career.</p>
-      <button mat-raised-button color="primary">Explore Courses</button>
-    </div>
-  
-  </div> 
-  <div class="container background">
-    <div class="imgalign">
-      <img src="assets/img/web-3.jpg" alt=" ">
-    </div>
-  </div>
-  
-  <div class="main">
-    <div class="emp">Vision & Mission</div>
-    <section id="vision">
-      <h2>Our Vision</h2>
-      <p>To empower individuals with the skills and knowledge required to thrive in the digital world and lead in the IT
-        industry.</p>
-    </section>
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <p>To provide high-quality education and training in IT through innovative teaching methods, hands-on projects, and
-        industry exposure.</p>
-    </section>
-  </div>
-  <div class="man">
-    <div class="contact-section">
-      <div class="contact-content">
-        <h2>Contact Us to Discuss How We Can Help You Get Trained in New Skills.</h2>
-        <a href="#" class="contact-button">Contact Us <span>&#x2192;</span></a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="container-card">
-    <div class="card">
-      <i class="material-icons">help_outline</i>
-      <h3>DOUBT SESSION</h3>
-      <p>Interactive doubt sessions ensure that students can clarify their queries and reinforce their understanding of
-        the subject. These sessions are designed to address individual learning needs.</p>
-    </div>
-  
-    <div class="card">
-      <i class="material-icons">assignment</i>
-      <h3>DAILY ASSESSMENT</h3>
-      <p>Regular assessments ensure continuous engagement and understanding of the subject matter. Daily assessments help
-        reinforce learning and identify areas that need improvement.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">build</i>
-      <h3>PRACTICAL SESSION</h3>
-      <p>Hands-on practical sessions allow students to apply theoretical knowledge in real-world scenarios. Practical
-        experience enhances understanding and retention of Java concepts.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">work</i>
-      <h3>LIVE PROJECT SESSION</h3>
-      <p>Working on live projects gives students a taste of real-world development scenarios. It helps bridge the gap
-        between theory and practical application.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">schedule</i>
-      <h3>FLEXIBLE SCHEDULE</h3>
-      <p>A flexible schedule accommodates different learning styles and time constraints. It allows students to balance
-        their learning with other commitments.</p>
-    </div>
-    <div class="card">
-      <i class="material-icons">support_agent</i>
-      <h3>QUICK SUPPORT</h3>
-      <p>Immediate assistance and support address queries and challenges promptly. Quick support fosters a positive
-        learning experience and prevents roadblocks.</p>
-    </div>
-  </div>
-  <div class="bat">
-    <div class="container">
-      <div class="image-container">
-        <img src="assets/web/web-4.jpg " alt="Corporate Training Team">
-      </div>
-      <div class="text-container">
-        <h1>Benefits Of <span>Corporate Training</span></h1>
-        <p>Training is more than enhancing qualities or skills. It is the ability to help capable and independent-thinking
-          people; together, build relationships and careers.</p>
-        <div class="features">
-          <div class="feature-box">
-            <span class="icon">👨‍💻</span>
-            <h3>Professional Training Courses</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">🖥️</span>
-            <h3>Live Interactive Learning</h3>
-          </div>
-          <div class="feature-box">
-            <span class="icon">👩‍🏫</span>
-            <h3>IT Professionals as Instructors</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <div>
-    <div class="why-choose-section">
-      <h2>Why Choose A3Soft Java Solution ?</h2>
-      <ul>
-        <li>
-          <strong>Experienced and Certified Trainers:</strong> Our team has seasoned IT professionals with decades of
-          experience in the industry. Each trainer is certified in their respective fields, ensuring you receive
-          up-to-date knowledge.
-        </li>
-        <li>
-          <strong>Comprehensive Curriculum:</strong> We offer a wide range of IT courses in Pune, designed to cater to
-          different learning needs and career choices in the future. Our curriculum is crafted to align with the latest
-          industry trends and equip you with the most in-demand skills.
-        </li>
-        <li>
-          <strong>Focus on Practical Learning:</strong> We believe in a hands-on approach to learning. Our coding classes
-          in Pune go beyond theoretical knowledge, providing you with opportunities to apply your skills through
-          real-world projects and simulations.
-        </li>
-        <li>
-          <strong>100% Placement Guarantee:</strong> We are so confident that we offer IT courses in Pune with placement
-          with a 100% placement guarantee. Upon successful course completion, we will assist you in securing a placement
-          in a top IT company.
-        </li>
-        <li>
-          <strong>Career Support Services:</strong> Our commitment to your success doesn’t end after training. We offer
-          dedicated career support services, including resume building and interview preparation.
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div>
-    <div class="LAPTOP">
-      <div class="card">
-        <h3>IT Training <span class="highlight">Institute</span></h3>
-        <p>Technogeeks is a Leading IT Training Institute in Pune for IT Courses with placement.</p>
-        <p>We provide real-time project training with placement assistance.</p>
-        <p>Technogeeks job-oriented IT classes include the courses –</p>
-        <ul>
-          <li>Data Science, Python Programming, AWS Training,</li>
-          <li>Full Stack Web Development Courses,</li>
-          <li>Automation Testing Courses (Selenium),</li>
-          <li>Data Warehousing (ETL Testing & Development with Informatica).</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Software Training <span class="highlight">Institute</span></h3>
-        <p>With 8+ yrs of Software training and placement experience, we trained 10000+ students who were placed in IT
-          companies like TCS, Infosys, and Cognizant.</p>
-        <p>You will learn software courses like Informatica Powercenter, Programming languages, web frameworks, cloud
-          platforms, and software testing frameworks.</p>
+        <p>With a focus on providing high-quality training and practical, hands-on experience, we aim to equip our
+          students with the skills required to excel in today’s competitive IT landscape.</p>
+        <p>Our courses cover a wide range of software technologies, including Informatica Powercenter, programming
+          languages, web frameworks, cloud platforms, and software testing frameworks. We are dedicated to supporting
+          our students in securing placements with top IT companies.</p>
       </div>
       <div class="card">
         <h3>Computer Programming <span class="highlight">Courses</span></h3>
@@ -491,3 +192,4 @@
   <div>
     <app-footer></app-footer>
   </div>
+</div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  constructor(private router: Router) {}
   longText = `Learn from industry-certified professionals with years of experience in their respective fields.`;
   longText1 = `Choose from a variety of class times and self-paced options to fit your busy lifestyle`;
   longText2 = `Benefit from one-on-one mentorship, career guidance, and personalized feedback to help you achieve your goals.`;
@@ -25,4 +27,10 @@ courses = [
 
   },
 ]
+courceClick() {
+this.router.navigate(['/cource']);
+}
+contactClick() {
+  this.router.navigate(['/contactUs']);
+}
 }

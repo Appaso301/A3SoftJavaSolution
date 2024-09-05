@@ -1,22 +1,39 @@
+.background {
+  background-color: #fad7f84f;;
+}
+@keyframes blink {
+  0% {
+      color: red;
+  }
+
+  50% {
+      color: #ea8a16
+  }
+
+  100% {
+      color: white;
+  }
+}
+
+.blink {
+  animation: blink 3s infinite;
+}
+
 .full-page-image {
-    background: url('/assets/academy-banner.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-align: center;
-    padding: 20px;
-   margin-bottom: 2%;
+  background: url(/assets/academy-banner.jpg) no-repeat center center fixed;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+  margin-left: 45px;
+  margin-top: -9px;
   }
   
   .content {
-    background: rgba(0, 0, 0, 0.6); /* Transparent background for readability */
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
-    border-radius: 10px;
-    width: 1200px;
+    border-radius: 10px 10px 0px 0px;
+    width: 1197px;
     margin-top: 10px;
   }
   
@@ -26,8 +43,9 @@
   }
   
   p {
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 30px;
+    font-style: italic;
   }
   
   button {
@@ -38,12 +56,71 @@
     background-color: #fad7f84f;
   }
   .imgalign{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55%;
-    margin-top: 100px;
-  }
+     display: flex;
+     margin-left: 65px;
+     background: rgba(0, 0, 0, 0.3);
+     width: 1237px;
+     border-radius: 0px 0px 15px 15px;
+   }
+.imgstyle{
+  border-radius: 50% 50% 50% 50%;
+  width: 500px;
+  height: 500px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.card-vandm {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ff6600;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(112, 45, 45, 0.1);
+  flex: 1;
+  width: 274px;
+
+}
+.cards-display{
+  display: flex;
+  margin-top: 40px;
+  height: 350px;
+
+}
+.card-vandm {
+  background-color: aliceblue;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-vandm:hover {
+  transform: translateY(-5px);
+}
+
+.card-vandm i.material-icons {
+  font-size: 50px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.card-vandm h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+
+}
+
+.card-vandm p{
+  font-size: 15px;
+}
+.vandmimg {
+  height: 50px;
+  width: 50px;
+  
+}
+
 .epm{
   display: block;
     margin-left: auto;
@@ -68,11 +145,11 @@
 }
 
 .container-card {
-    display: grid;
+  display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 1235px;
+    margin-left: 65px;
 }
 .emp{
  text-align: center;
@@ -108,30 +185,15 @@
 /* styles.css */
 .bat{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #e9ecef;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-}
-
-.container {
-  max-width: 1200px;
-  display: flex;
-  align-items: center;
-  background: #fff;
+  width: 1231px;
+  margin-left: 67PX;
+  margin-top: 28px;
+  margin-bottom: 29px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-.image-container {
-  position: relative;
-  flex: 1;
-  overflow: hidden;
-  border-radius: 0 50% 50% 0;
 }
 
 .image-container img {
@@ -140,13 +202,14 @@
   height: auto;
   display: block;
   object-fit: cover;
-  border-radius: 0 50% 50% 0;
 }
 
 .text-container {
   flex: 1;
   padding: 40px;
   background: linear-gradient(45deg, #f8f9fa, #ffffff);
+  margin-right: 40px;
+  border-radius: 15px;
 }
 
 h1 {
@@ -249,11 +312,11 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+}*/
 
 /* Box Styles */
 .box {
@@ -310,10 +373,14 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+   width: 1156px;
+    border-radius: 10px;
   /* margin-top: 25px; */
 }
 .man{
-  margin-bottom: 25px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    margin-left: 67px;
 }
 .contact-content {
   display: flex;
@@ -339,6 +406,7 @@ footer {
   display: flex;
   align-items: center;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .contact-button:hover {
@@ -360,13 +428,66 @@ body {
 }
 
 .why-choose-section {
-  max-width: 1500px;
+  width: 1196px;
   height: 500px;
-  margin: 0 auto;
-  background-color: white;
+  margin-left: 67px;
+  background: rgba(0, 0, 0, 0.3);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.training-institute-section {
+  width: 1196px;
+  height: 500px;
+  margin-left: 67px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.inner-why-choose-section {
+  width: 1150px;
+  height: 450px;
+  margin-left: 30px;
+  box-shadow:  0px 0px 15px rgba(0, 0, 0, 1);
+  background-color: white;
+  margin-top: 20px;
+}
+
+.inner-details {
+  display: flex;
+}
+.div-design {
+  margin-top: 40px;
+  margin-right: 10px;
+  height: 350px;
+ 
+}
+.div-design:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: skyblue;
+  cursor: pointer;
+  .whyus-icon {
+    color: #e2e20f;
+  }
+  .p-style{
+  color: rgb(248, 248, 248)  ;
+  }
+}
+
+.p-style{
+  font-style: normal;
+}
+.whyus-icon {
+  margin-left: 35%;
+  margin-bottom: 10px;
+  color: #11a4e0;
+  font-size: x-large;
+}
+
+.whyusImg {
+  width: 434px;
+  height: 450px;
 }
 
 .why-choose-section h2{  
@@ -402,9 +523,9 @@ body {
 .LAPTOP{
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 20px;
+  width: 1197px;
+  gap: 12px;
+  margin-top: 50px;
 }
 
 .card {
@@ -412,9 +533,8 @@ body {
   padding: 20px;
   border: 1px solid #ff6600;
   border-radius: 8px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px rgba(112, 45, 45, 0.1);
   flex: 1;
-  min-width: 250px;
 }
 
 .card h3 {
@@ -443,5 +563,12 @@ body {
   color: #555;
   margin-bottom: 8px;
 }
+.buttonstyle
+{
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+
 
 

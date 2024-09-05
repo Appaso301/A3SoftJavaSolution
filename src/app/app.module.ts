@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {  HeaderComponent} from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FreedemoComponent } from './pages/freedemo/freedemo.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({ 
   declarations: [
@@ -15,6 +16,7 @@ import { FreedemoComponent } from './pages/freedemo/freedemo.component';
     HeaderComponent,
     HomeComponent,
     FreedemoComponent,
+    ContactComponent,
 
   ],
   imports: [
