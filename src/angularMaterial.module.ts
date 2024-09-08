@@ -11,6 +11,10 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
     exports: [
         MatInputModule,
@@ -24,7 +28,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
         MatBadgeModule,
         MatSidenavModule,
         MatListModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatFormFieldModule, 
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatCheckboxModule
     ]
   })
   export class AngularMaterialModule { }

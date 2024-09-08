@@ -1,1 +1,103 @@
-<p>contact works!</p>
+<div class="container background">
+  <div class="image-container">
+    <img class="imgstyle" src="assets/img/contactUs.PNG" alt=" ">
+  </div>
+  <div class="contact-master">
+    <div class="training-institute-section">
+      <div class="LAPTOP">
+        <div class="card-1">
+          <div class="card-1-details">
+            <img class="call-image" src="assets/img/call.PNG" alt=" ">
+            <div>
+              <p style="margin:33px 15px 8px 20px;font-size: 12px;color: #555;">Call us directly at</p>
+              <p class="call-number">+91 9284563723</p>
+              <p class="all-number">See all numbers and locations</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Book a <span class="highlight">Meeting</span></h3>
+          <p style="font-size: 13px;color: #807575;font-weight: 300;">To schedule time to speak with one of our team
+            member, complete the form, then click "availability" to choose a date and click "time slot" to book time of
+            meeting with us.</p>
+          <div>
+            <mat-form-field style="margin-right: 15px;margin-left: 18px;width: 247px;">
+              <mat-label>First Name</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Last Name</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field style="margin-right: 15px;margin-left: 18px;width: 247px;">
+              <mat-label>Email</mat-label>
+              <input matInput>
+             
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Phone Number</mat-label>
+              <input matInput>
+            
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field style="margin-right: 15px;margin-left: 18px;width: 247px;">
+              <mat-label>Qualification</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Country</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div>
+            <mat-form-field style="margin-right: 15px;margin-left: 18px;width: 247px;">
+              <mat-label>State</mat-label>
+              <input matInput>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>District</mat-label>
+              <input matInput>
+            </mat-form-field>
+          </div>
+          <div> 
+            <mat-form-field class="dtsize" style="margin-right: 15px;margin-left: 18px;width: 247px;">
+              <mat-label>Choose a date</mat-label>
+              <input matInput [matDatepicker]="picker">
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field>
+              <mat-label>Time Slot</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let food of foods; trackBy: trackByFn" [value]="food.value">
+                  {{food.viewValue}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div>
+             <button class="button-style-submit" mat-raised-button>SUBMIT</button>
+            </div>
+          <div class="LAPTOP-1">
+            <div class="card-2">
+              <div class="card-1-details">
+                <img class="call-image" src="assets/img/chat.PNG" alt=" ">
+                <div>
+                  <p style="margin: 43px 20px -9px 20px;font-size: 16px;color: #555;">Chat with our team</p>
+                  <button class="button-style" mat-raised-button>CHAT WITH TEAM</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+<div style="margin-top: 575px;">
+  <app-footer></app-footer>
+</div>
+</div>

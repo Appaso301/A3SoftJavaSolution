@@ -9,7 +9,8 @@ import {  HeaderComponent} from './pages/header/header.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FreedemoComponent } from './pages/freedemo/freedemo.component';
 import { ContactComponent } from './pages/contact/contact.component';
-
+import { LoginComponent } from './pages/login/login.component';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -17,6 +18,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     FreedemoComponent,
     ContactComponent,
+    LoginComponent,
 
   ],
   imports: [
@@ -24,9 +26,10 @@ import { ContactComponent } from './pages/contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    SharedModule
-    
-    
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
