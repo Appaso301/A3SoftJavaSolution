@@ -11,6 +11,7 @@ import { FreedemoComponent } from './pages/freedemo/freedemo.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
     FreedemoComponent,
     ContactComponent,
     LoginComponent,
-
+    
   ],
   imports: [
     BrowserModule,
@@ -33,5 +34,6 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
   ],
   providers: [],
   bootstrap: [AppComponent]
+ 
 })
 export class AppModule { }

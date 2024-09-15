@@ -37,10 +37,16 @@ footer {
 
 .social-icons a {
     color: #fff;
-    font-size: 1.5rem;
-    margin: 0 10px;
+    font-size: 2.0rem;
+    margin: 15px 0px 0px 19px;
 }
 
 .social-icons a:hover {
     opacity: 0.8;
+}
+.imgstyle {
+    height: 40px;
+    width: 40px;
+    margin-right: 25px;
+    margin-bottom: 10px;
 }

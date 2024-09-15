@@ -1,0 +1,39 @@
+::ng-deep .mdc-dialog__container {
+ 
+        /* display: flex; */
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-around; */
+        /* box-sizing: border-box; */
+        /* height: 100%; */
+        transform: scale(0.8);
+        opacity: 0;
+        pointer-events: none;
+        width: 525px;
+        height: 478px;
+        margin-left: -376px;
+        margin-top: 40px;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+    width: max-content;
+}
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    color: red;
+}
+p {
+    margin-left: 15px;
+}
+.mat-dialog-action{
+    margin-left: 15px;
+    margin-top: 35px;
+}
+.btn-style {
+    width: 96px;
+    height: 30px;
+    background: #e94b37;
+    color: #fff;
+    border: none;
+}

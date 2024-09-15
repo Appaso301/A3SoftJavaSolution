@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>Important Exam Notice</h2>
+<div mat-dialog-content>
+  <p><strong>Online Test Notification</strong></p>
+  <p>Dear Student,</p>
+  <p>You are required to take the <strong>[College Name]</strong> online test exam as part of the admission/assessment process. The exam is crucial for your evaluation, and we recommend completing it by the given deadline.</p>
+
+  <p style="color: red;"><strong>Instructions:</strong></p>
+  <ul>
+    <li><strong>Time Duration:</strong> Max 30 Min..</li>
+    <li><strong>Exam Guidelines:</strong></li>
+    <ul>
+      <li>Ensure a stable internet connection.</li>
+      <li>Complete the test in one sitting.</li>
+      <li>Read all questions carefully before answering.</li>
+      <li>Any unfair means may lead to disqualification.</li>
+      <li>Start your exam click on <span style="color: red;">'Start Exam'</span> link.</li>
+    </ul>
+  </ul>
+  <p>If you need assistance, please contact our support team at <span style="color: red;">A3Softjava&#64;rediffmail.com / 9766998096.</span> </p>
+</div>
+
+<div class="mat-dialog-action" mat-dialog-actions>
+  <a mat-button href="https://forms.gle/AEciFy8eV8WRt4TCA" target="_blank" style="margin-right: 80%;">Start Exam</a>
+  <button mat-button mat-dialog-close  (click)="closePopup()" class="btn-style">Close</button>
+</div>
