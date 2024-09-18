@@ -12,6 +12,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './pages/signup/signup.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.co
     FreedemoComponent,
     ContactComponent,
     LoginComponent,
+    SignupComponent,
     
   ],
   imports: [
@@ -29,7 +32,8 @@ import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.co
     AngularMaterialModule,
     SharedModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

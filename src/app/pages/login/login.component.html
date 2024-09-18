@@ -7,8 +7,8 @@
             <div class="card-2">
                 <div class="card-1-details">
                     <h2 style="font-size: 29px;margin: 0;">Lo<span class="highlight">gin</span></h2>
-                    <p style="color: #b6b1b1;">Doesn't have an account yet?<span class="highlight-1">Sign Up</span></p>
-                        <form class="example-form">
+                    <p style="color: #b6b1b1;">Doesn't have an account yet?<span class="highlight-1" (click)="signUpClick()">Sign Up</span></p>
+                        <form class="example-form" (ngSubmit)="onSubmit()">
                             <p class="label-group">Email Address</p>
                             <mat-form-field class="example-full-width">
                               <mat-label>Email</mat-label>
@@ -25,7 +25,7 @@
                             <p class="label-group">Password<span class="highlight-1-password">Forgot Password?</span></p>
                             <mat-form-field class="example-full-width">
                                 <mat-label>Password</mat-label>
-                                <input type="email" matInput [formControl]="passwordFormControl" placeholder="Enter 6 character or more">
+                                <input type="password" matInput [formControl]="passwordFormControl" placeholder="Enter 6 character or more">
   
                                 <mat-error *ngIf="passwordFormControl.hasError('password') && !passwordFormControl.hasError('required')">
                                   Please enter a valid password address

@@ -74,3 +74,11 @@
     color: #f6f1f1;
  }
 
+
+::ng-deep .mat-mdc-snack-bar-container.snackbar-success .mdc-snackbar__surface {
+  background-color: #4caf50 !important;  /* Green for success */
+}
+
+::ng-deep .mat-mdc-snack-bar-container.snackbar-error .mdc-snackbar__surface {
+  background-color: #f44336 !important;  /* Red for error */
+}
