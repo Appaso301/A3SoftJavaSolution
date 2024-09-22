@@ -7,13 +7,29 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
+  badgevisible = false;
+  showButton = false;
+  notificationIcon: string | null = '';
+
+  isDrawerOpen = false;
+
+  constructor(private router: Router) {
+    // Initialize notificationIcon from localStorage
+    this.notificationIcon = localStorage.getItem('email');
+
+    // Check if notificationIcon exists, and set showButton accordingly
+    if (this.notificationIcon) {
+      this.showButton = true;
+    }
+  }
+  ngOnInit() {
+    localStorage.removeItem('email');
+  }
   isActive(route: string): boolean {
     return this.router.url === route;
   }
-  badgevisible = false;
+
   badgevisibility() {
     this.badgevisible = true;
   }
-  isDrawerOpen = false;
 }

@@ -14,6 +14,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './pages/signup/signup.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -23,6 +24,7 @@ import { SignupComponent } from './pages/signup/signup.component';
     ContactComponent,
     LoginComponent,
     SignupComponent,
+    AboutusComponent,
     
   ],
   imports: [
