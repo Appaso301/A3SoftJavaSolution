@@ -29,10 +29,10 @@
     </mat-menu>
     <button mat-button  routerLink="/freedemo" routerLinkActive="active-link">Free Demo Videos</button>
     <button mat-button>Upcoming Batches</button>
-    <button mat-button >About Us</button>
+    <button mat-button  routerLink="/aboutUs" routerLinkActive="active-link">About Us</button>
     <button mat-button routerLink="/contactUs" routerLinkActive="active-link">Contact</button>
     <button mat-raised-button routerLink="/login" color="accent">Login</button>
-    <button (click)="badgevisibility()" mat-icon-button>
+    <button *ngIf="showButton" (click)="badgevisibility()" mat-icon-button>
         <mat-icon matBadgeColor="accent" matBadge="10" [matBadgeHidden]="badgevisible" matBadgeSize="small">notifications</mat-icon>
     </button>
 </mat-toolbar>

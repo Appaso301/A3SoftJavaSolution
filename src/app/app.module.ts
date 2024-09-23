@@ -16,6 +16,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { OtpVerificationComponent } from './pages/otp-verification/otp-verification.component';
 
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { OtpVerificationComponent } from './pages/otp-verification/otp-verificat
     SignupComponent,
     ForgotPasswordComponent,
     OtpVerificationComponent,
+    AboutusComponent,
     
   ],
   imports: [

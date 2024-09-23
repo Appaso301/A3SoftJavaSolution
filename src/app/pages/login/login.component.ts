@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { LoginService } from './../../services/login.service';
+import { loginService } from './../../services/login.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,7 +13,7 @@ export class LoginComponent {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   passwordFormControl = new FormControl('', [Validators.required]);
 
-  constructor(private authService: LoginService, private snackBar: MatSnackBar,private router: Router) {}
+  constructor(private authService: loginService, private snackBar: MatSnackBar, private router: Router) { }
 
   onSubmit() {
     if (this.emailFormControl.valid && this.passwordFormControl.valid) {
@@ -21,29 +21,37 @@ export class LoginComponent {
       const password = this.passwordFormControl.value!;
 
       this.authService.login(email, password).subscribe(
-        response => {
-          console.log('Login successful:', response);
-          this.snackBar.open('Login successful', 'Close', {
-            duration: 3000,
-            panelClass: ['snackbar-success']  // Apply success class
-          });
+        (response: {
+          email: string; error: any;
+        }) => {
+          if (response.error) {
+            this.snackBar.open('Invalid email or password', '', {
+              duration: 3000,
+              panelClass: ['snackbar-error']
+            });
+          } else {
+            this.snackBar.open('Login successful', '', {
+              duration: 3000,
+              panelClass: ['snackbar-success']
+            });
+            localStorage.setItem('email', response.email);
+            this.router.navigate(['/home']).then(() => {
+              window.location.reload();
+            });
+          }
         },
-        error => {
+        (error: any) => {
           console.error('Login failed:', error);
-          this.snackBar.open('Login failed. Please try again.', 'Close', {
+          this.snackBar.open('Login failed. Please try again.', '', {
             duration: 3000,
-            panelClass: ['snackbar-error']  // Apply error class
+            panelClass: ['snackbar-error']
           });
         }
       );
-    } else {
-      this.snackBar.open('Form is invalid. Please check the fields.', 'Close', {
-        duration: 3000,
-        panelClass: ['snackbar-error']
-      });
     }
   }
+
   signUpClick() {
-   this.router.navigate(['/signUp']);
+    this.router.navigate(['/signUp']);
   }
 }

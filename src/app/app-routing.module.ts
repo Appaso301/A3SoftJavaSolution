@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 import { OtpVerificationComponent } from './pages/otp-verification/otp-verification.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'signUp', component: SignupComponent },
   { path: 'forgot-password', component:ForgotPasswordComponent },
   { path: 'otp-verification', component:OtpVerificationComponent },
+  { path: 'aboutUs', component: AboutusComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'cource', loadChildren: () => import('./pages/cources/cources.module').then(m => m.CourcesModule) },
   { path: '**', redirectTo: '/home' } // Fallback for unknown routes
