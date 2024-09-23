@@ -5,6 +5,8 @@ import { FreedemoComponent } from './pages/freedemo/freedemo.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { OtpVerificationComponent } from './pages/otp-verification/otp-verification.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 
 const routes: Routes = [
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'contactUs', component: ContactComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signUp', component: SignupComponent },
+  { path: 'forgot-password', component:ForgotPasswordComponent },
+  { path: 'otp-verification', component:OtpVerificationComponent },
   { path: 'aboutUs', component: AboutusComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'cource', loadChildren: () => import('./pages/cources/cources.module').then(m => m.CourcesModule) },
