@@ -1,0 +1,65 @@
+<div class="container background">
+    <div>
+        <img class="login-image" src="assets/img/loginBack.jpg" alt=" ">
+    </div>
+    <div class="contact-master">
+        <div class="LAPTOP-1">
+            <div class="card-2">
+                <div class="card-1-details">
+                    <h2 style="font-size: 15px;margin: 0;">Email Verification</h2>
+                    <form class="example-form">
+                        <p class="label-group">Email Address</p>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput [formControl]="emailFormControl"
+                                placeholder="Ex. pat@example.com">
+
+
+                            <mat-error
+                                *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                                Please enter a valid email address
+                            </mat-error>
+
+                            <mat-error *ngIf="emailFormControl.hasError('required')">
+                                Email is <strong>required</strong>
+                            </mat-error>
+
+                        </mat-form-field>
+
+                        <!-- <button class="two" (click)="sendOTP()"> Send </button> -->
+                        <div style="margin-top: 20px;" *ngIf="!showOTPInput">
+                            <button class="button-style" (click)="sendOTP()" mat-raised-button>Send OTP</button>
+                        </div>
+                        <mat-card *ngIf="showOTPInput">
+                            <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()">
+                                <mat-form-field appearance="outline">
+                                    <mat-label>OTP</mat-label>
+                                    <input matInput formControlName="otp" placeholder="Enter OTP" />
+                                    <mat-error *ngIf="otpForm.get('otp')?.invalid">OTP is required</mat-error>
+                                </mat-form-field>
+                                <div style="margin-top: 20px;">
+                                    <button class="button-style" mat-raised-button>Verify OTP</button>
+                                </div>
+                                <!-- <div class="one">
+                                    <button mat-raised-button color="primary" type="submit"
+                                        [disabled]="otpForm.invalid">Verify OTP</button>
+                                </div> -->
+                            </form>
+                        </mat-card>
+
+
+
+
+                    </form>
+                </div>
+            </div>
+            <div>
+            </div>
+            <img class="login1-image" src="assets/img/loginPage1.jpg" alt=" ">
+        </div>
+
+    </div>
+    <div style="margin-top: -42px;">
+        <app-footer></app-footer>
+    </div>
+</div>

@@ -11,9 +11,11 @@ import { FreedemoComponent } from './pages/freedemo/freedemo.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { WarningPopUpComponent } from './shared/warning-pop-up/warning-pop-up.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupComponent } from './pages/signup/signup.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
+import { OtpVerificationComponent } from './pages/otp-verification/otp-verification.component';
+
 @NgModule({ 
   declarations: [
     AppComponent,
@@ -23,6 +25,8 @@ import { SignupComponent } from './pages/signup/signup.component';
     ContactComponent,
     LoginComponent,
     SignupComponent,
+    ForgotPasswordComponent,
+    OtpVerificationComponent,
     
   ],
   imports: [

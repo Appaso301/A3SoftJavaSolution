@@ -3,7 +3,7 @@
 }
 .login-image{
     height: 580px;
-    width: 100%;    
+    width: 100%;
 }
 .contact-master {
     position: absolute;
@@ -57,6 +57,7 @@
   }
  .example-form {
     margin-top: 25px;
+  
  }
  .mat-mdc-form-field {
     display: inline;
@@ -81,4 +82,14 @@
 
 ::ng-deep .mat-mdc-snack-bar-container.snackbar-error .mdc-snackbar__surface {
   background-color: #f44336 !important;  /* Red for error */
+}
+.one{
+margin-left: 200px;
+/* background-color: aqua; */
+
+}
+.two{
+
+margin-left: 80%;
+
 }
